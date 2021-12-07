@@ -22,18 +22,18 @@ For more informatiom about the future of redux-logger, check out the [discussion
 ## Usage
 
 ```javascript
-const  {} = "text-similarity-scorer";
+const similarity = require("text-similarity-scorer");
 
-const store = createStore(
-  rootReducer,
-  applyMiddleware(asyncDispatchMiddleware)
+const score = similarity(
+  "I HAVE A DREAM",
+  "I HAD A NAP"
 );
 
 ```
 
 ## To Do
 
-- [ ] Adding typeScript types
+- [ ] Adding ability to choose similarity algorithm
 
 ## License
 
