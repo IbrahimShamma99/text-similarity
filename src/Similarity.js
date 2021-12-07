@@ -1,7 +1,8 @@
 "use strict";
 
-import Helper from "./Helper";
-import deepcopy from "clone";
+let Helper = require("./Helper");
+let debug = require("debug")("SentenceSimilarity");
+let deepcopy = require("clone");
 
 /**
  * Order similarity should only depend on the number of matches, since
@@ -64,6 +65,8 @@ let similarityTable = function (a, b, options) {
       }
     }
   }
+
+  debug(table);
 
   return table;
 };
@@ -139,6 +142,8 @@ let exactScore = function (bm, a, b) {
     }
   }
 
+  debug("bm", bm);
+
   return score;
 };
 
@@ -148,6 +153,8 @@ let matchScore = function (bm, a, b) {
   for (let i of bm.values()) {
     score = score + i.score;
   }
+
+  debug("bm", bm);
 
   return score;
 };
@@ -206,6 +213,9 @@ let similarity = function (ain, bin, options) {
   a = Helper.cleanArray(a);
   b = Helper.cleanArray(b);
 
+  debug("a", a);
+  debug("b", b);
+
   const lteral_a = [a.join("")];
   const lteral_b = [b.join("")];
 
@@ -235,4 +245,4 @@ let similarity = function (ain, bin, options) {
 
 const approximate = (value) => Math.floor(value * 100) / 100;
 
-export default similarity;
+module.exports = similarity;
