@@ -1,5 +1,5 @@
-let similarity = require("./Similarity");
-let similarityScore = require("./SimilarityScore");
+import similarity from "./Similarity";
+import similarityScore from "./SimilarityScore";
 
 const abstractSim = (s1, s2) => {
   let winkOpts = {
@@ -9,4 +9,4 @@ const abstractSim = (s1, s2) => {
   return similarity(s1, s2, winkOpts);
 };
 
-module.exports = abstractSim;
+export default abstractSim;

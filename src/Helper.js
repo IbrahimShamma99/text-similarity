@@ -1,12 +1,11 @@
 "use strict";
 
-let Base = require("./Base.js");
-let SbEvent = require("./SbEvent.js");
-let StopWords = require("./Stopwords.js");
-let BinarySearch = require("binary-search");
-let debug = require("debug")("helper");
+import Base from "./Base.js";
+import SbEvent from "./SbEvent.js";
+import StopWords from "./Stopwords.js";
+import BinarySearch from "binary-search";
 
-module.exports = {
+export default {
   //A bunch of objects to help with indexing through logstash
   indexingNoForceNoWait: { forceIndex: false, returnFast: true },
   indexingNoForceWait: { forceIndex: false, returnFast: false },
@@ -59,7 +58,6 @@ module.exports = {
   ],
 
   highlightedFields(highlight) {
-    debug("highlight", highlight);
     let hFields = [];
     for (let i in highlight) {
       if (i != "message") {
@@ -104,7 +102,6 @@ module.exports = {
   logAndThrowUndefined: function (error, val, dontKill) {
     if (!val && val != 0) {
       new Error(error);
-      debug("error", error);
       if (!dontKill) {
         SbEvent.emit("error", error);
         SbEvent.emit("close");
@@ -116,7 +113,6 @@ module.exports = {
 
   logAndThrow: function (error, dontKill) {
     new Error(error);
-    debug("error", error);
     if (!dontKill) {
       SbEvent.emit("error", error);
       SbEvent.emit("close");

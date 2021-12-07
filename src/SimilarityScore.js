@@ -1,5 +1,5 @@
-let natural = require("natural");
-let dlev = require("damerau-levenshtein");
+import natural from "natural";
+import dlev from "damerau-levenshtein";
 
 let winklerMetaphone = function (a, b, options) {
   let scoreJw = natural.JaroWinklerDistance(a, b);
@@ -37,4 +37,4 @@ let dl = function (a, b, options) {
 let commonScore = { f: metaphoneDl, options: { threshold: 0.3 } };
 //let commonScore = { f: winklerMetaphone, options : {threshold: 0.4} }
 
-module.exports = { winklerMetaphone, metaphoneDl, dl, commonScore };
+export default  { winklerMetaphone, metaphoneDl, dl, commonScore };

@@ -25,9 +25,10 @@ For more informatiom about the future of redux-logger, check out the [discussion
 const similarity = require("text-similarity-scorer");
 
 const score = similarity(
-  "I HAVE A DREAM",
-  "I HAD A NAP"
+  "I HAVE A DREAM", //first sentence
+  "I HAD A NAP" //second sentence
 );
+// NOTE : Order matters
 
 ```
 
