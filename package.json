@@ -1,0 +1,32 @@
+{
+  "name": "text-similarity",
+  "version": "0.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IbrahimShamma99/asynDispatch-middleware.git"
+  },
+  "files": [
+    "src"
+  ],
+  "keywords": [
+    "redux",
+    "middleware"
+  ],
+  "author": "ibrahim abushammah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IbrahimShamma99/asynDispatch-middleware/issues"
+  },
+  "homepage": "https://github.com/IbrahimShamma99/asynDispatch-middleware#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.0",
+    "@babel/preset-env": "^7.11.0",
+    "@rollup/plugin-babel": "^5.1.0"
+  }
+}
