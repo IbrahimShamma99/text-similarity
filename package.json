@@ -1,11 +1,11 @@
 {
   "name": "text-similarity-scorer",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
     "build": "rollup -c",
-    "prepublisher": "npm run build"
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
