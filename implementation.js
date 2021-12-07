@@ -1,4 +1,4 @@
-const similarity = require("./dist/index");
+const similarity = require("text-similarity-scorer");
 
 const score = similarity(
   "I HAVE A DREAM", //first sentence
