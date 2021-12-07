@@ -1,6 +1,7 @@
 "use strict";
 
-import EventEmitter from "events";
+
+const EventEmitter = require("events");
 
 class MyEvent extends EventEmitter {}
 
@@ -10,4 +11,4 @@ SbEvent.on("close", function () {
   process.emit("exit");
 });
 
-export default SbEvent;
+module.exports = SbEvent;

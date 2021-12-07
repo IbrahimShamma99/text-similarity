@@ -1,24 +1,23 @@
-import babel from "@rollup/plugin-babel";
-import { nodeResolve } from "@rollup/plugin-node-resolve";
+// import babel from "@rollup/plugin-babel";
+import copy from "rollup-plugin-copy";
 
 const config = {
   input: "src/index.js",
   output: {
-    dir: "dist",
-    format: "commonjs",
+    file: "dist/index.js",
+    format: "cjs",
   },
-  //   external: [
-  //     "natural",
-  //     "damerau-levenshtein",
-  //     "clone",
-  //     "binary-search",
-  //     "events",
-  //   ],
   plugins: [
-    nodeResolve(),
-    babel({
-      babelHelpers: "bundled",
-      exclude: "node_modules/**",
+    copy({
+      targets: [
+        { src: "src/index.js", dest: "dist" },
+        { src: "src/Similarity.js", dest: "dist" },
+        { src: "src/SimilarityScore.js", dest: "dist" },
+        { src: "src/Helper.js", dest: "dist" },
+        { src: "src/Base.js", dest: "dist" },
+        { src: "src/Stopwords.js", dest: "dist" },
+        { src: "src/SbEvent.js", dest: "dist" },
+      ],
     }),
   ],
 };

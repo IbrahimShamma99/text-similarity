@@ -1,6 +1,6 @@
 "use strict";
 
-export default {
+module.exports = {
   isUsingNode: function () {
     let usingNode = false;
     if (typeof process === "object") {

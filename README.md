@@ -29,6 +29,19 @@ const score = similarity(
   "I HAD A NAP" //second sentence
 );
 // NOTE : Order matters
+console.log(score);
+/*
+{
+  matched: [ 0, -1, 2, -1 ],
+  matchScore: [ 1, 0, 1, 0 ],
+  exact: 2,
+  literal: 0,
+  score: 2,
+  score_pct: 0.5,
+  order: 1,
+  size: 0.25
+}
+*/
 
 ```
 

@@ -1,6 +1,6 @@
 "use strict";
 
-export default function (moduleName) {
+module.exports = function (moduleName) {
   if (typeof moduleName !== "string") {
     throw new TypeError("Passed parameter must be a string.");
   }
@@ -14,4 +14,4 @@ export default function (moduleName) {
     throw error;
   }
   return true;
-}
+};
