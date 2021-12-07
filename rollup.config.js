@@ -9,6 +9,13 @@ const config = {
   options: {
     presets: ["env", { modules: false }],
   },
+  external: [
+    "natural",
+    "damerau-levenshtein",
+    "clone",
+    "binary-search",
+    "events",
+  ],
   plugins: [
     babel({
       babelHelpers: "bundled",
