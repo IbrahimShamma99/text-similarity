@@ -4,7 +4,7 @@ const config = {
   input: "src/index.js",
   output: {
     dir: "dist",
-    format: "esm",
+    format: "commonjs",
   },
   options: {
     presets: ["env", { modules: false }],
