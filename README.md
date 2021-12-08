@@ -1,4 +1,4 @@
-# text-similarity-scorer middleware
+# text-similarity-scorer
 
 [![npm](https://img.shields.io/npm/v/text-similarity-scorer.svg?maxAge=2592000?style=plastic)](https://www.npmjs.com/package/text-similarity-scorer)
 
