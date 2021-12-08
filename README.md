@@ -4,11 +4,11 @@
 
 > text-similarity-scorer is your goto similarity score between two strings
 
-For more informatiom about the future of redux-logger, check out the [discussion here](https://github.com/IbrahimShamma99/asynDispatch-middleware/issues).
+For more informatiom about the future of the package, check out the [discussion here](https://github.com/IbrahimShamma99/text-similarity/issues).
 
 ## Table of contents
 
-- [text-similarity-scorer middleware](#text-similarity-scorer-middleware)
+- [text-similarity-scorer](#text-similarity-scorer)
   - [Table of contents](#table-of-contents)
   - [Install](#install)
   - [Usage](#usage)
