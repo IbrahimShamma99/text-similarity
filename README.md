@@ -2,7 +2,7 @@
 
 [![npm](https://img.shields.io/npm/v/text-similarity-scorer.svg?maxAge=2592000?style=plastic)](https://www.npmjs.com/package/text-similarity-scorer)
 
-> text-similarity-scorer is a middleware can be added with no time to privilage the asynchronous server requests into your Redux store
+> text-similarity-scorer is your goto similarity score between two strings
 
 For more informatiom about the future of redux-logger, check out the [discussion here](https://github.com/IbrahimShamma99/asynDispatch-middleware/issues).
 
